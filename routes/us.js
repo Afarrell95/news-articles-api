@@ -2,7 +2,7 @@ const container = document.querySelector(".articles-container");
 
 async function getArticles() {
   const response = await fetch(
-    "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=iYs7GVUnHNX71roBmJ9Owq79ZAqWwAGC"
+    "https://api.nytimes.com/svc/topstories/v2/us.json?api-key=iYs7GVUnHNX71roBmJ9Owq79ZAqWwAGC"
   );
   const data = await response.json();
   console.log(data);
