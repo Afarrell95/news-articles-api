@@ -7,7 +7,7 @@ const cors = require("cors");
 
 app.use(cors());
 
-app.use(express.static("docs"));
+app.use(express.static("public"));
 
 app.get("/api/key", (req, res) => {
   res.send(key);
